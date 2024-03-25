@@ -1,19 +1,26 @@
 var i = 0;
-var txt = "I'm Logan Logic";
+var intro = "I'm Logan Logic";
 var speed = 200;
 
-function typeWriter() {
+function introWriter() {
 
-    if (i < txt.length) {
-        document.getElementById("hello").innerHTML += txt.charAt(i);
+    if (i < intro.length) {
+
+        document.getElementById("hello").innerHTML += intro.charAt(i);
         i++;
-        setTimeout(typeWriter, speed);
+        setTimeout(introWriter, speed);
+
+    } else {
+
+        var hello = document.getElementById("hello");
+        hello.classList.remove("typing");
+
     }
 
 }
 
 function bannerLoad() {
 
-    setTimeout(typeWriter, 1000);
+    setTimeout(introWriter, 1000);
 
 }

@@ -50,7 +50,7 @@ body {
 
 }
 
-#hello::after {
+.typing::after {
 
     content: "_";
     font-size: 125%;
