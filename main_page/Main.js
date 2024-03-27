@@ -1,6 +1,6 @@
 var i = 0;
 var intro = "I'm Logan Logic";
-var speed = 200;
+var speed = 100;
 
 function introWriter() {
 
